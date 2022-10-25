@@ -8,5 +8,6 @@
     4. Make primary GitHub account an org member and admin of both repos
 2. On private repo
     1. Add personal access token (PAT) tied to primary GitHub account
-    2. Add worfklow `repo-sync.yml` to private/master using [github sync](https://github.com/marketplace/actions/github-repo-sync), which pushes the latest changes from public to private/repo-sync. This is triggered by a scheduled event once a week
-    3. Add `pull-request.yml` to private/master using [pull request](https://github.com/marketplace/actions/github-pull-request-action), which submits a PR from private/repo-sync to private/master. This is triggered by completion of the `repo-sync` workflow
+    2. Create workflow `repo-sync.yml` to `private/master` scheduled to run once a week
+        1. Create job `push-latest` using [github sync](https://github.com/marketplace/actions/github-repo-sync), which pushes the latest from public/master to private/repo-sync
+        2. Create job `create-pr` using [pull request](https://github.com/marketplace/actions/github-pull-request-action), which creates a PR from private/repo-sync to private/master
