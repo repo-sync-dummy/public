@@ -9,3 +9,4 @@
     2. Create workflow `repo-sync.yml` to `private/master` scheduled to run once a week
         1. Create job `get-latest` using [github sync](https://github.com/marketplace/actions/github-repo-sync), which pushes the latest from public/master to private/repo-sync
         2. Create job `create-draft-pr` using [pull request](https://github.com/marketplace/actions/github-pull-request-action), which creates a draft PR from private/repo-sync to private/master
+3. Done!
