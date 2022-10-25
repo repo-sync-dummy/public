@@ -7,5 +7,5 @@
 2. On private repo
     1. Add personal access token (PAT) tied to primary GitHub account
     2. Create workflow `repo-sync.yml` to `private/master` scheduled to run once a week
-        1. Create job `push-latest` using [github sync](https://github.com/marketplace/actions/github-repo-sync), which pushes the latest from public/master to private/repo-sync
-        2. Create job `create-pr` using [pull request](https://github.com/marketplace/actions/github-pull-request-action), which creates a detailed PR from private/repo-sync to private/master
+        1. Create job `get-latest` using [github sync](https://github.com/marketplace/actions/github-repo-sync), which pushes the latest from public/master to private/repo-sync
+        2. Create job `create-draft-pr` using [pull request](https://github.com/marketplace/actions/github-pull-request-action), which creates a draft PR from private/repo-sync to private/master
