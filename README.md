@@ -8,4 +8,5 @@
     4. Make primary GitHub account an org member and admin of both repos
 2. On private repo
     1. Add worfklow repo-sync.yml to private repository
-    2. Create personal access token (PAT) tied to primary GitHub account. Add PAT to private repo secrets
+    2. Add [GitHub Sync](https://github.com/marketplace/actions/github-repo-sync) as a job in the workflow
+    3. Create personal access token (PAT) tied to primary GitHub account. Add PAT to private repo secrets
