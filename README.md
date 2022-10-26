@@ -16,3 +16,6 @@
     2. Refactor so that every triggering of `repo-sync` creates a new branch
     3. [x] Confirm that PR2 is a separate request, not an overwrite (if PR1 is not merged yet)
     4. [x] Double confirm
+5. Narrow scopes of token as much as possible to the repository level
+    1. [x] `create-pr` consumes `secrets.GITHUB_TOKEN`
+    2. [ ] `get-latest` consumies `secrets.GITHUB_TOKEN`
