@@ -1,12 +1,13 @@
 # Repo sync demo
 
-1. Recreating GitHub setup
-    1. Create organization [repo-sync-dummy](https://github.com/repo-sync-dummy) with my secondary GitHub account
-    2. With secondary account, made two repos org/public and org/private. They share a git history. And one approval is required for PR's
-    4. Make primary GitHub account an org member and admin of both repos
+**Steps taken to prototype this job**
+1. Become admin on a private repo owned by another org
+    1. Create fake organization with secondary GitHub account
+    4. Create two repos `org/public` and `org/private` with shared git history
+    5. Make primary GitHub account an admin of the private repo
 2. On private repo
     1. Add personal access token (PAT) tied to primary GitHub account
-    2. Create workflow `repo-sync.yml` to `private/master` scheduled to run once a week
-        1. Create job `get-latest` using [github sync](https://github.com/marketplace/actions/github-repo-sync), which pushes the latest from public/master to private/repo-sync
-        2. Create job `create-draft-pr` using [pull request](https://github.com/marketplace/actions/github-pull-request-action), which creates a draft PR from private/repo-sync to private/master
-3. Done!
+    2. Create workflow `repo-sync.yml` in `private/main` scheduled to run once a week
+        1. Create job `get-latest`
+        2. Create job `create-pr`
+4. Create upstream changes on `public/master` and trigger the workflow on `private/main`
