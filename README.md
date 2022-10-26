@@ -14,5 +14,5 @@
 4. Test behavior when `PR1` remains unresolved and `PR2` comes in
     1. PR2 overwrites PR1 by updating the branch. We do not want this behavior
     2. Refactor so that every triggering of `repo-sync` creates a new branch
-    3. [] Confirm that PR2 is a separate request, not an overwrite (if PR1 is not merged yet)
-    4. [] Double confirm
+    3. [x] Confirm that PR2 is a separate request, not an overwrite (if PR1 is not merged yet)
+    4. [x] Double confirm
