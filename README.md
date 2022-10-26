@@ -13,4 +13,5 @@
 3. Create upstream changes on `public/master` and trigger the workflow on `private/main`
 4. Test behavior when `PR1` remains unresolved and `PR2` comes in
     1. PR2 overwrites PR1 by updating the branch. We do not want this behavior
-    2. [] Refactor so that every triggering of `repo-sync` creates a new branch
+    2. Refactor so that every triggering of `repo-sync` creates a new branch
+    3. [] Confirm that PR2 is a separate request, not an overwrite (if PR1 is not merged yet)
