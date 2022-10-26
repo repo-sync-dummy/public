@@ -11,4 +11,5 @@
         1. Create job `get-latest`
         2. Create job `create-pr`
 3. Create upstream changes on `public/master` and trigger the workflow on `private/main`
-4. Test behavior when `PR1` remains unresolved and `PR2` comes in
+4. Test behavior when `PR1` remains unresolved and `PR2` comes in. [Unwanted feature!]
+    1. What happens to the original commits? 
