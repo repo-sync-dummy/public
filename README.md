@@ -18,4 +18,5 @@
     4. [x] Double confirm
 5. Narrow scopes of token as much as possible to the repository level
     1. [x] `create-pr` runs with `secrets.GITHUB_TOKEN`
-    2. [ ] `get-latest` consumies `secrets.GITHUB_TOKEN`
+    2. [x] `get-latest` consumies `secrets.GITHUB_TOKEN`
+    3. [x] double check by deleting PAT from repository
