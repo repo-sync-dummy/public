@@ -1,6 +1,6 @@
 # Repo sync demo
 
-**Steps taken to prototype this job blafwaefwadfa**
+**Steps taken to prototype this job**
 1. Become admin on a private repo owned by another org
     1. Create fake organization with secondary GitHub account
     4. Create two repos `org/public` and `org/private` with shared git history
@@ -20,8 +20,3 @@
     1. [x] `create-pr` runs with `secrets.GITHUB_TOKEN`
     2. [x] `get-latest` consumies `secrets.GITHUB_TOKEN`
     3. [x] double check by deleting PAT from repository
-6. dfasdfa
-7. asdfasdfq32t
-8. 13456gadvbhs
-9. 4ygwersfdgh64wherag
-10. asdfgq35yhgqr
