@@ -20,3 +20,4 @@
     1. [x] `create-pr` runs with `secrets.GITHUB_TOKEN`
     2. [x] `get-latest` consumies `secrets.GITHUB_TOKEN`
     3. [x] double check by deleting PAT from repository
+6. STEP 6
